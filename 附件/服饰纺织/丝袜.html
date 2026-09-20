@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>丝袜材质成分与选购偏好分析 — 格物志 v1.0</title>
+<style>
+  :root{
+    --ink:#2b2630; --paper:#faf7f4; --card:#ffffff;
+    --velvet:#7a5c6e; --velvet-deep:#5a3f52; --accent:#b0899f;
+    --hi:#1e7d46; --mid:#b07d10; --lo:#b3452e;
+    --line:#e8dede;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",sans-serif;line-height:1.75;padding:24px 14px}
+  .wrap{max-width:920px;margin:0 auto}
+  header{background:linear-gradient(135deg,var(--velvet-deep),var(--velvet));color:#fff;border-radius:14px;padding:28px 26px;margin-bottom:22px;box-shadow:0 4px 18px rgba(90,63,82,.25)}
+  header h1{font-size:24px;margin-bottom:10px;letter-spacing:1px}
+  header .meta{font-size:13px;opacity:.92;display:flex;flex-wrap:wrap;gap:6px 18px}
+  header .meta span{background:rgba(255,255,255,.14);padding:2px 10px;border-radius:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(60,40,55,.05)}
+  h2{font-size:18px;color:var(--velvet-deep);border-left:5px solid var(--accent);padding-left:10px;margin-bottom:14px}
+  h3{font-size:15.5px;color:var(--velvet-deep);margin:14px 0 8px}
+  p{margin-bottom:10px;font-size:14.5px}
+  ul,ol{margin:6px 0 12px 22px;font-size:14.5px}
+  li{margin-bottom:5px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin:10px 0 14px;background:#fff}
+  th{background:var(--velvet);color:#fff;padding:8px 10px;text-align:left;font-weight:600}
+  td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  tr:nth-child(even) td{background:#f7f2f5}
+  .tag{display:inline-block;font-size:12px;font-weight:700;padding:1px 9px;border-radius:12px;vertical-align:middle;margin-left:6px;white-space:nowrap}
+  .t-hi{background:#e2f3e8;color:var(--hi);border:1px solid #9fd4b2}
+  .t-mid{background:#fdf3d7;color:var(--mid);border:1px solid #e8cd7a}
+  .t-lo{background:#fbe4dd;color:var(--lo);border:1px solid #e5a48f}
+  .t1{background:#e8f0fe;color:#1a4fa0;border:1px solid #b3c9ef}
+  .t2{background:#e6f6f4;color:#0f6e60;border:1px solid #9ed6cb}
+  .t3{background:#f3ecfb;color:#6a3aa0;border:1px solid #cdb3ec}
+  .t4{background:#f0f0f0;color:#666;border:1px solid #ccc}
+  .conclusion{border-left:6px solid var(--hi);background:#f2faf5}
+  .conclusion h2{color:var(--hi);border-left-color:var(--hi)}
+  .avoid{border-left:6px solid var(--lo);background:#fdf5f3}
+  .avoid h2{color:var(--lo);border-left-color:var(--lo)}
+  .safe{border-left:6px solid #1a4fa0;background:#f3f7fe}
+  .safe h2{color:#1a4fa0;border-left-color:#1a4fa0}
+  .kv{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 4px}
+  .kv div{background:#f7f2f5;border:1px solid var(--line);border-radius:8px;padding:8px 14px;font-size:13.5px}
+  .kv b{color:var(--velvet-deep)}
+  .foot{font-size:12.5px;color:#8a7d86;text-align:center;padding:14px 0 6px}
+  .ver{font-weight:700;color:var(--velvet)}
+  a{color:var(--velvet-deep);word-break:break-all}
+  .src{font-size:13px}
+  .src li{margin-bottom:7px}
+  .note{background:#fdf8ec;border:1px dashed var(--mid);border-radius:8px;padding:10px 14px;font-size:13.5px;margin:10px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>丝袜材质成分与选购偏好分析</h1>
+  <div class="meta">
+    <span>研究时间：2026-09-20 15:07</span>
+    <span>一级分类：服饰纺织</span>
+    <span>切入路径：路径 A（品类切入）+ 偏好翻译机制</span>
+    <span>版本：v1.0</span>
+    <span>历史比对：无（首次研究）</span>
+  </div>
+</header>
+
+<!-- 结论卡片 -->
+<section class="card conclusion">
+  <h2>结论先行</h2>
+  <p><b>一句话：</b>你的四条偏好指向同一个答案——<b>80–120D「天鹅绒」连裤袜，成分标认准「锦纶 80–85% + 氨纶 15–20%」，商品关键词认「天鹅绒 / 哑光 / 消光」，避开「油亮 / 马油 / 水光 / 珠光」。</b><span class="tag t-mid">整体置信度：中</span></p>
+  <div class="kv">
+    <div><b>不透肉</b> → D 数 ≥ 80D（完全不透 120D）<span class="tag t-mid">中</span></div>
+    <div><b>顺滑柔软</b> → 天鹅绒（双向包芯纱）工艺<span class="tag t-mid">中</span></div>
+    <div><b>不反光</b> → 消光锦纶 + 绒面织法<span class="tag t-hi">高</span></div>
+    <div><b>成分占比</b> → 锦纶 80–85% : 氨纶 15–20%<span class="tag t-mid">中</span></div>
+  </div>
+  <p><b>备选：</b>夏秋求薄透气 → 高支密织包芯丝（接受微透微光）；预算充足 → 日系厚木/郡是哑光款。<span class="tag t-mid">中</span></p>
+</section>
+
+<!-- 核心问题直答 -->
+<section class="card">
+  <h2>你的三个直接问题</h2>
+  <h3>Q1：符合偏好的成分与占比？</h3>
+  <p>中厚天鹅绒款：<b>锦纶 80–85% + 氨纶 15–20%</b>。锦纶（尼龙）负责耐磨、触感与骨架，氨纶（莱卡）负责弹性贴合。氨纶 &lt;10% 弹性差易掉裆，&gt;25% 属高弹特殊款（如超薄或油亮）。<span class="tag t-mid">中</span></p>
+  <h3>Q2：哑光的成分是什么？亮光的成分是什么？</h3>
+  <p><b>成分表上两者一模一样——都是「锦纶 + 氨纶」。哑与亮的差别不在成分表，而在锦纶纺丝时添加的消光剂（二氧化钛 TiO₂）含量：</b>大有光丝 TiO₂=0%（强反光，即「亮光」），半消光约 0.2–0.5%，全消光约 1.0–2.5%（即「哑光」）。天鹅绒的哑光 = 消光丝 + 高密度绒面织法双重漫反射。该处理在成分标识中不可见，所以挑哑光只能认「天鹅绒 / 哑光 / 消光」关键词。<span class="tag t-hi">高（T1 专利 ×2 + 招股书）</span></p>
+  <table>
+    <tr><th>光泽档位</th><th>TiO₂ 含量</th><th>效果</th></tr>
+    <tr><td>大有光（有光丝）</td><td>0%</td><td>强反光 → 亮光</td></tr>
+    <tr><td>半消光</td><td>约 0.2–0.5%</td><td>柔和微光</td></tr>
+    <tr><td>全消光</td><td>约 1.0–2.5%</td><td>无光泽 → 哑光</td></tr>
+  </table>
+  <h3>Q3：天鹅绒和马油袜是不是组成相同、只是占比不同？</h3>
+  <p><b>成分体系相同（都是锦纶+氨纶），但不止占比不同——三层差异中最关键的一层（消光处理）成分表根本看不出来。</b><span class="tag t-mid">中</span></p>
+  <table>
+    <tr><th>维度</th><th>天鹅绒</th><th>马油袜（油亮袜）</th></tr>
+    <tr><td>成分体系</td><td>锦纶 + 氨纶</td><td>锦纶 + 氨纶（低价品或为涤纶 <span class="tag t-lo">待验证</span>）</td></tr>
+    <tr><td>典型配比</td><td>锦纶 80–85% / 氨纶 15–20%</td><td>锦纶 60–62% / 氨纶 38–40%（CdR 62/38、珞樱 60.8/39.2 实测标注）</td></tr>
+    <tr><td>纱线光泽处理</td><td>消光/半消光丝（哑光）</td><td>有光/半光丝（油亮缎面）</td></tr>
+    <tr><td>织法</td><td>双向包芯纱、绒感</td><td>900 针以上高密度平织</td></tr>
+    <tr><td>取向</td><td>柔软保暖、哑光遮瑕</td><td>光泽、紧致耐勾、高弹</td></tr>
+    <tr><td>含真「马油」？</td><td>—</td><td>否。「马油」是油光工艺的视觉名，非真实添加<span class="tag t-mid">中</span></td></tr>
+  </table>
+  <p style="font-size:13px;color:#777">注：知乎有「马油袜氨纶 90%」之说，与两款实测成分（约 60/40）直接矛盾，不采信。<span class="tag t-lo">低</span></p>
+</section>
+
+<!-- 技术路线 -->
+<section class="card">
+  <h2>品类地图：四大技术路线</h2>
+  <p>市面几乎所有丝袜 = <b>锦纶 + 氨纶</b>两种纤维（中消协实测 25 款无一例外<span class="tag t-hi">高</span>），差别在纱线形态、配比、织法：</p>
+  <table>
+    <tr><th>路线</th><th>纱线结构</th><th>典型配比</th><th>特点</th><th>定位</th></tr>
+    <tr><td>水晶丝</td><td>细旦锦纶+氨纶</td><td>锦纶84%/氨纶16%（T1 申报文件）</td><td>细密透明、弹性一般、易勾丝</td><td>低端/超薄夏款</td></tr>
+    <tr><td>包芯丝</td><td>锦纶包覆氨纶芯</td><td>锦纶为主</td><td>柔软贴服透明；紧密度分优劣</td><td>市面主流</td></tr>
+    <tr><td><b>天鹅绒</b></td><td>单/双向包芯纱超细纤维</td><td><b>锦纶80–85%/氨纶15–20%</b></td><td>绒感柔软、弹性大、哑光、透气</td><td>春秋中厚主力</td></tr>
+    <tr><td>油亮丝（马油袜）</td><td>有光丝高密平织</td><td>锦纶~60%/氨纶~40%</td><td>油亮缎面、耐勾、弹性极大</td><td>亮面细分</td></tr>
+  </table>
+  <p style="font-size:13px">成分标实证：浪莎天鹅绒 84.7/15.3<span class="tag t3">T3</span>、丹吉娅 85/15<span class="tag t4">T4</span>、Solidea Magic 50 80/18/棉2<span class="tag t1">T1</span>、Hudson 8D 天鹅绒 64/36（超薄高氨纶特例）<span class="tag t3">T3</span>；百科推荐区间 80–85/15–20<span class="tag t3">T3</span>。</p>
+</section>
+
+<!-- D数 -->
+<section class="card">
+  <h2>丹尼数（D）与透肉对照</h2>
+  <table>
+    <tr><th>D 数</th><th>透肉程度</th><th>场景</th></tr>
+    <tr><td>≤20D</td><td>超薄透明</td><td>夏季裸感</td></tr>
+    <tr><td>40–60D</td><td>中厚微透</td><td>春秋</td></tr>
+    <tr><td><b>80D</b></td><td><b>不易透肉 ✓</b></td><td>深秋初冬</td></tr>
+    <tr><td><b>120D+</b></td><td><b>完全不透 ✓✓</b></td><td>冬季</td></tr>
+  </table>
+  <p style="font-size:13px">多源一致结论<span class="tag t-mid">中</span>；透肉还受编织密度、颜色（黑&gt;肤）、撑开幅度影响。</p>
+</section>
+
+<!-- 安全 -->
+<section class="card safe">
+  <h2>安全边界（红线检查）</h2>
+  <table>
+    <tr><th>项</th><th>要求</th><th>证据</th></tr>
+    <tr><td>强制标准</td><td><b>GB 18401-2010 B 类</b>（直接接触皮肤）：甲醛 ≤75mg/kg、pH 4.0–8.5、禁用可分解致癌芳香胺、色牢度、无异味</td><td><span class="tag t1">T1</span></td></tr>
+    <tr><td>产品标准</td><td><b>FZ/T 73001-2016《袜子》</b>：纤维含量、横向延伸值、色牢度等；标签 GB 5296.4</td><td><span class="tag t1">T1</span></td></tr>
+    <tr><td>消光剂 TiO₂</td><td>包埋于纤维内部、非游离涂层，GB 18401 未列为限制物质，正常使用无安全风险</td><td><span class="tag t-hi">高</span></td></tr>
+    <tr><td>抽检实况</td><td>主要不合格项 = <b>纤维含量虚标 + 标识不全</b>（中消协：3 款虚标、8 款未明示）</td><td><span class="tag t2">T2</span></td></tr>
+  </table>
+  <ul>
+    <li><b>能用：</b>标识齐全（商标/厂名厂址/成分含量/执行标准 GB 18401 B 类 + FZ/T 73001/尺码）的正规渠道产品。</li>
+    <li><b>谨慎：</b>无成分标识的三无低价袜（虚标高发区）；深色款注意湿摩擦掉色，敏感肌首穿前先水洗。</li>
+  </ul>
+</section>
+
+<!-- 避坑 -->
+<section class="card avoid">
+  <h2>避坑与智商税识别</h2>
+  <table>
+    <tr><th>营销概念</th><th>真相</th><th>置信度</th></tr>
+    <tr><td>「防勾丝/不勾丝」</td><td>中消协实测 25 款连裤丝袜<b>全部勾丝、11 款勾破</b>；皮尔卡丹、浪莎仅一星——宣称与实测相差甚远</td><td><span class="tag t-hi">高</span></td></tr>
+    <tr><td>「马油袜含马油护肤」</td><td>「马油」= 油光视觉名，非真实添加；「8 小时湿润度+47%」无任何公开检测报告</td><td><span class="tag t-mid">中</span>/<span class="tag t-lo">低·待验证</span></td></tr>
+    <tr><td>「912 针、氨纶 90%」</td><td>与实测成分（氨纶约 40%）矛盾，夸大话术</td><td><span class="tag t-lo">低·不采信</span></td></tr>
+    <tr><td>贵 = 不勾丝</td><td>188 元厚木与 3.29 元杂牌勾丝测试同档（均勾丝）——贵 ≠ 好</td><td><span class="tag t-hi">高</span></td></tr>
+  </table>
+</section>
+
+<!-- 品牌 -->
+<section class="card">
+  <h2>品牌格局与价格带 <span class="tag t-mid">中</span></h2>
+  <table>
+    <tr><th>梯队</th><th>品牌</th><th>价格带</th><th>备注</th></tr>
+    <tr><td>国产走量</td><td>浪莎 / 梦娜 / 宝娜斯 / 耐尔 / 丹吉娅 / 南极人</td><td>约 5–40 元/双</td><td>性价比主力；浪莎防勾丝实测仅一星</td></tr>
+    <tr><td>日系中端</td><td>厚木 ATSUGI / 郡是 Gunze</td><td>约 30–188 元</td><td>工艺稳定色号准；勾丝同样难免</td></tr>
+    <tr><td>欧洲高端</td><td>Wolford / Falke / Calzedonia / CdR / Solidea</td><td>约 200–600+ 元</td><td>面料版型见长；为偏好无需追高</td></tr>
+  </table>
+  <p style="font-size:13px">价格为检索时点行情，具体款号实时价 <span class="tag t-lo">待验证</span>。购买建议：认准水洗标成分 + 执行标准，天鹅绒哑光款国产正规牌即可满足需求。</p>
+</section>
+
+<!-- 使用维护 -->
+<section class="card">
+  <h2>使用维护（延长寿命）</h2>
+  <ul>
+    <li>中性洗涤剂冷水手洗，忌用力揉搓、暴晒；机洗务必装洗衣袋。</li>
+    <li>穿前检查指甲、戒指、粗糙皮具——中消协证实勾丝无袜幸免，防护在人。</li>
+    <li>「白醋泡恢复油亮」仅为用户经验，先小面积试。<span class="tag t-lo">低</span></li>
+  </ul>
+</section>
+
+<!-- 置信度 -->
+<section class="card">
+  <h2>置信度总表</h2>
+  <table>
+    <tr><th>关键结论</th><th>置信度</th><th>依据</th></tr>
+    <tr><td>丝袜主体成分 = 锦纶 + 氨纶</td><td><span class="tag t-hi">高</span></td><td>中消协 25 款实测（T2）+ T1 申报文件</td></tr>
+    <tr><td>哑光=消光锦纶 TiO₂ / 亮光=有光丝，成分表不可见</td><td><span class="tag t-hi">高</span></td><td>T1 专利 ×2 + 招股书</td></tr>
+    <tr><td>GB 18401 B 类 + FZ/T 73001 安全边界</td><td><span class="tag t-hi">高</span></td><td>T1 标准原文</td></tr>
+    <tr><td>「防勾丝」宣称普遍不实</td><td><span class="tag t-hi">高</span></td><td>中消协实测（T2）</td></tr>
+    <tr><td>天鹅绒配比 锦纶80–85% / 氨纶15–20%</td><td><span class="tag t-mid">中</span></td><td>≥2 独立 T3 + 品牌官方单点一致</td></tr>
+    <tr><td>80D 不易透肉 / 120D 完全不透</td><td><span class="tag t-mid">中</span></td><td>≥2 独立 T3 一致</td></tr>
+    <tr><td>油亮袜氨纶约 38–40%</td><td><span class="tag t-mid">中</span></td><td>2 款独立实测标注一致（T3）</td></tr>
+    <tr><td>马油袜不含真马油</td><td><span class="tag t-mid">中</span></td><td>T3 评测 + T4 宣称交叉</td></tr>
+    <tr><td>品牌价格带</td><td><span class="tag t-mid">中</span></td><td>T2+T3，时效受限</td></tr>
+    <tr><td>「马油护肤」功效 / 氨纶-光泽因果 / 涤纶版占比</td><td><span class="tag t-lo">低·待验证</span></td><td>仅 T4 / 来源矛盾 / 单源</td></tr>
+  </table>
+  <p><b>整体置信度：中</b>（木桶原则：机理层为高，应用层关键结论为中）。</p>
+  <div class="note"><b>知识缺口：</b>① 具体款号实时成分标与价格——以水洗标/检测报告为准；② 氨纶比例与光泽的因果存矛盾——用「认哑光关键词 + 看实物描述」替代成分表推断；③「马油护肤」「白醋复亮」等宣称待第三方检测。</div>
+</section>
+
+<!-- 来源 -->
+<section class="card">
+  <h2>参考来源（按证据分级）</h2>
+  <ol class="src">
+    <li><span class="tag t1">T1</span> GB 18401-2010 B 类限值与 FZ/T 73001-2016 — 辽宁省监局 2024 抽查通报 scjg.ln.gov.cn；凤凰网《采购定制袜子必读》i.ifeng.com/c/8urC129mLcQ</li>
+    <li><span class="tag t1">T1</span> 专利 CN113802213A（消光 FDY：大有光 0% / 半消光 0.30%±0.05% / 全消光 2.5%±0.1% TiO₂）patentimages.storage.googleapis.com</li>
+    <li><span class="tag t1">T1</span> 专利 CN108641079A（全消光锦纶 6 切片，TiO₂ 消光）patentimages.storage.googleapis.com</li>
+    <li><span class="tag t1">T1</span> 上市公司招股说明书（大有光/半消光/全消光定义）static.cninfo.com.cn/finalpage/2014-07-23/1200072611.PDF</li>
+    <li><span class="tag t1">T1</span> 浙江永春科技公开转让说明书（水晶丝 84/16、包芯丝与天鹅绒工艺）spdf.askci.com/870698（抓取时 525，取自搜索快照，<span class="tag t-lo">待验证</span>）</li>
+    <li><span class="tag t1">T1</span> Solidea 官方产品页（Magic 50：80% 锦纶 / 18% 氨纶 / 2% 棉）onebioshop.com</li>
+    <li><span class="tag t2">T2</span> 中消协 2021 比较试验：25 款连裤丝袜 + 25 款打底裤（勾丝/虚标/标识）xinwen.bjd.com.cn/content/s6052e6b7e4b0063e4e7bb539.html</li>
+    <li><span class="tag t2">T2</span> 福建恒诚聚酰胺项目环保验收监测报告（半/全消光 TiO₂ 工艺）oss.fjhb.org</li>
+    <li><span class="tag t3">T3</span> SSA 丝社实测标注：CdR 62/38、珞樱 60.8/39.2 ssalegs.com/newsinfo/1096198.html；Hudson 8D 天鹅绒 64/36 ssalegs.com/newsinfo/1802832.html</li>
+    <li><span class="tag t3">T3</span> 什么值得买《马油袜真的防勾丝吗》post.smzdm.com/p/ak8d3d39；《厚木郡是初秋丝袜》post.smzdm.com/p/604603；《国际八大丝袜品牌》post.smzdm.com/p/a27odmvn</li>
+    <li><span class="tag t3">T3</span> 知乎：天鹅绒哑光成因 zhihu.com/question/313149994；马油袜区别 zhihu.com/question/3574835018（氨纶 90% 说不采信）</li>
+    <li><span class="tag t3">T3</span> 淘宝百科：浪莎天鹅绒 84.7/15.3 bk.taobao.com；百度百科「连裤袜」（80–85% / 15–20% 推荐区间）</li>
+    <li><span class="tag t3">T3</span> 丹尼数阈值：爱问 iask.sina.com.cn/jxwd/dhnWdnOiUCzd.html；豆瓣 douban.com/note/138635764/</li>
+    <li><span class="tag t3">T3</span> 品牌网 2026 丝袜十大品牌 chinapp.com/brand/1054；知乎专栏品牌推荐 zhuanlan.zhihu.com/p/361432113</li>
+    <li><span class="tag t4">T4</span> 丹吉娅成分标 85/15 item.ule.com；敬雅 85/15 m.gys.cn；「马油微囊缓释」等详情页宣称（仅线索）</li>
+  </ol>
+</section>
+
+<div class="foot">格物志 · 日用消费品通用研究分析框架 ｜ 框架作者：伏羲 ｜ <span class="ver">——来自格物志v1.0</span></div>
+</div>
+</body>
+</html>

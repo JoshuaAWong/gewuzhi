@@ -1,0 +1,10 @@
+{
+  "name": "格物志",
+  "version": "1.3.0",
+  "status": "beta",
+  "category": "日常类",
+  "dependencies": [],
+  "triggers": ["格物志", "选购", "怎么选", "买什么好", "推荐", "成分", "原理", "智商税", "避坑", "疏通", "杀虫", "丝袜"],
+  "last_updated": "2026-09-20",
+  "author": "Tuesday"
+}

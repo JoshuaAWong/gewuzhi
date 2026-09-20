@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>厨房下水道疏通 · 格物志研究报告</title>
+<style>
+  :root{
+    --ink:#1f2933; --sub:#52606d; --line:#e4e7eb; --bg:#f5f7fa;
+    --blue:#1d6fb8; --blue-d:#155a96; --green:#2f9e63; --red:#d64545; --amber:#c8871a;
+    --card:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75;padding:32px 16px}
+  .wrap{max-width:920px;margin:0 auto}
+  header.top{background:linear-gradient(135deg,#0f4c81,#1d6fb8);color:#fff;border-radius:14px;padding:30px 34px;box-shadow:0 6px 18px rgba(15,76,129,.25)}
+  header.top h1{font-size:26px;letter-spacing:1px}
+  header.top .meta{margin-top:12px;font-size:13px;opacity:.92;display:flex;flex-wrap:wrap;gap:8px 18px}
+  .badge{display:inline-block;padding:2px 10px;border-radius:99px;font-size:12px;font-weight:700;vertical-align:middle}
+  .b-hi{background:#e3f5ea;color:var(--green);border:1px solid #b7e4c9}
+  .b-mid{background:#fdf3e0;color:var(--amber);border:1px solid #f2ddb0}
+  .b-lo{background:#fdeaea;color:var(--red);border:1px solid #f3c2c2}
+  .b-route{background:rgba(255,255,255,.18);color:#fff}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 30px;margin-top:22px}
+  h2{font-size:19px;color:var(--blue-d);border-left:5px solid var(--blue);padding-left:12px;margin-bottom:14px}
+  h3{font-size:16px;margin:18px 0 8px;color:var(--ink)}
+  p{margin:8px 0}
+  .concl{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:6px}
+  .cc{border-radius:12px;padding:16px 18px;font-size:14px}
+  .cc h4{font-size:15px;margin-bottom:6px}
+  .cc.good{background:#f0faf4;border:1px solid #b7e4c9}
+  .cc.alt{background:#eef5fc;border:1px solid #c3dcf2}
+  .cc.bad{background:#fdf0f0;border:1px solid #f3c2c2}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#eef3f8;color:var(--blue-d);white-space:nowrap}
+  tr:nth-child(even) td{background:#fafbfc}
+  .tree{background:#0f172a;color:#d9e6f5;border-radius:10px;padding:18px 20px;font-family:Consolas,"Courier New",monospace;font-size:13px;line-height:1.7;overflow-x:auto;white-space:pre}
+  .warn{background:#fdf0f0;border:1px solid #f3c2c2;border-left:6px solid var(--red);border-radius:10px;padding:14px 18px;margin:12px 0;font-size:14px}
+  .warn b{color:var(--red)}
+  .note{background:#fffaf0;border:1px solid #f2ddb0;border-left:6px solid var(--amber);border-radius:10px;padding:14px 18px;margin:12px 0;font-size:14px}
+  ul.refs{font-size:13px;padding-left:20px}
+  ul.refs li{margin:6px 0;word-break:break-all}
+  ul.refs a{color:var(--blue);text-decoration:none}
+  ul.refs a:hover{text-decoration:underline}
+  .tag{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:4px;margin-right:6px;color:#fff}
+  .t1{background:#0f4c81}.t2{background:#2f9e63}.t3{background:#c8871a}.t4{background:#94a3b8}
+  .stars{color:var(--amber);letter-spacing:2px}
+  footer{margin:26px 0 10px;text-align:center;font-size:12.5px;color:var(--sub)}
+  .kgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+  .kcard{border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:13.5px;background:#fbfcfe}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>🚰 厨房下水道堵了，怎么办？</h1>
+  <p style="margin-top:6px;font-size:14.5px;opacity:.95">疏通方案枚举 × 管道疏通剂品类分析 —— 格物志研究报告</p>
+  <div class="meta">
+    <span>研究时间：2026-09-20 15:06</span>
+    <span>一级分类：家居清洁与耗材</span>
+    <span class="badge b-route">切入路径：C 问题切入 → 汇入 A</span>
+    <span>版本：格物志 v1.0</span>
+  </div>
+</header>
+
+<!-- 结论卡片 -->
+<section>
+  <h2>一句话结论</h2>
+  <p><b>厨房油脂型半堵（下水缓慢）首选大厂强碱颗粒/凝胶疏通剂（威猛先生 500g 约 7-18 元，价格 <span class="badge b-lo">待验证</span>），静置 15-30 分钟后大量热水冲；完全堵死先用皮搋子/弹簧物理开道；疏通剂绝不与洁厕灵、84 等混用（致命氯气）。</b> <span class="badge b-hi">方案置信度：高</span> <span class="badge b-mid">整体：中</span></p>
+  <div class="concl">
+    <div class="cc good"><h4>✅ 首选 <span class="badge b-hi">高</span></h4>下水缓慢/油脂半堵：强碱颗粒型（威猛先生、老管家等大厂企标备案款），按说明静置→大量热水冲洗。完全堵死：皮搋子/手摇弹簧先开道，疏通剂收尾。</div>
+    <div class="cc alt"><h4>🔵 备选 <span class="badge b-mid">中</span></h4>凝胶型（花王，挂壁养护、气味小）或生物酶制剂（不伤管，适合老旧管道与日常防堵，救急慢）。</div>
+    <div class="cc bad"><h4>⛔ 避坑 <span class="badge b-hi">高</span></h4>①疏通剂+洁厕灵/84 混用（氯气中毒）；②铝管/软管/涂层管用强碱型；③无企标白牌；④"倒入即通"广告话术；⑤小苏打+白醋混合偏方（无效）。</div>
+  </div>
+</section>
+
+<!-- Step 0 -->
+<section>
+  <h2>Step 0 · 切入识别与历史检索</h2>
+  <table>
+    <tr><th>输入形态</th><td>「厨房下水道堵了，怎么办？」—— 问题/场景，无品类名、无单品名</td></tr>
+    <tr><th>路由判定</th><td><b>路径 C（问题切入）</b>：方案枚举 → 场景匹配筛选 → 胜出方案归入「管道疏通剂」品类 → 汇入路径 A 做品类分析</td></tr>
+    <tr><th>需求验证</th><td>厨房场景堵塞物以<b>动植物油脂+食物残渣</b>为主（区别于卫生间毛发场景），直接决定"强碱皂化"为对症路线；分支追问：完全堵死 vs 下水缓慢、管道材质、家有幼儿否</td></tr>
+    <tr><th>Step 0.5 历史</th><td>品类缓存 9 个一级分类均无记录，本主题为格物志首研，无历史比对基线</td></tr>
+  </table>
+</section>
+
+<!-- 方案枚举 -->
+<section>
+  <h2>路径 C · 四大疏通路线对比</h2>
+  <table>
+    <tr><th>路线</th><th>手段</th><th>原理</th><th>适用</th><th>成本</th><th>置信度</th></tr>
+    <tr><td><b>物理疏通</b></td><td>皮搋子、手摇弹簧、拆洗存水弯、气压疏通器</td><td>机械力破碎/推走/钩出</td><td>完全堵死、异物堵塞首选</td><td>10-50 元 <span class="badge b-lo">待验证</span></td><td><span class="badge b-mid">中</span></td></tr>
+    <tr><td><b>化学疏通</b></td><td>管道疏通剂（强碱颗粒 / 碱性凝胶）</td><td>强碱皂化油脂 + 腐蚀蛋白质 + 放热 + 产气松动</td><td>下水缓慢、油脂半堵最优</td><td>5-45 元/次 <span class="badge b-lo">待验证</span></td><td><span class="badge b-hi">高</span></td></tr>
+    <tr><td><b>生物疏通</b></td><td>酶制剂养护剂</td><td>酶分解有机物，温和不伤管</td><td>轻度缓慢、日常防堵养护</td><td>20-50 元 <span class="badge b-lo">待验证</span></td><td><span class="badge b-mid">中</span></td></tr>
+    <tr><td><b>请人上门</b></td><td>专业疏通机、高压水枪</td><td>机械+水力</td><td>顽固堵死、主管道问题</td><td>约 200 元起 <span class="badge b-lo">待验证</span></td><td><span class="badge b-lo">低</span></td></tr>
+    <tr><td style="color:var(--red)"><b>网红偏方</b></td><td>小苏打+白醋混合</td><td>只产气泡，<b>清洁力为零</b>（科协辟谣）</td><td>——</td><td>——</td><td><span class="badge b-hi">无效·高</span></td></tr>
+  </table>
+  <p>厨房堵塞物画像：油脂冷却附着管壁、混入残渣形成油泥型半堵——强碱皂化恰好对症（T2 科协 + 行业报告两源）。<span class="badge b-hi">高</span></p>
+</section>
+
+<!-- 决策树 -->
+<section>
+  <h2>场景匹配 · 厨房专用决策树 <span class="badge b-mid">中</span></h2>
+  <div class="tree">堵了吗？
+├─ 完全堵死（水一点不流）
+│   ├─ 怀疑异物（筷子/骨头/抹布）→ 拆软管/弹簧钩取 → 不行则请人
+│   └─ 纯油垢堵死 → 皮搋子/手摇弹簧先开道 → 再用强碱颗粒型收尾
+├─ 下水缓慢（半堵，最常见）
+│   ├─ PVC 管 → 首选：强碱颗粒型 / 碱性凝胶（大厂企标备案款）
+│   ├─ 老房铸铁管 → 选标注"铸铁管可用"的温和型
+│   ├─ 铝管/软管/涂层管 → 禁用强碱型，改用酶制剂或物理
+│   └─ 家有幼儿 → 可用，全程手套+通风+上锁存放
+└─ 没堵，想防堵 → 酶制剂/凝胶每两周养护 + 热水定期冲 + 滤网拦残渣</div>
+</section>
+
+<!-- 成分原理 -->
+<section>
+  <h2>原理与成分 · 三条技术路线</h2>
+  <table>
+    <tr><th>路线</th><th>代表成分</th><th>机理</th><th>厨房适配</th><th>置信度</th></tr>
+    <tr><td><b>强碱颗粒型</b></td><td>氢氧化钠 + 铝粒 + 过碳酸钠 + 表活</td><td>NaOH 皂化油脂、腐蚀蛋白质；溶水放热；铝粒产氢气"空气炮"松动堵塞</td><td class="stars">★★★★★</td><td><span class="badge b-hi">高</span></td></tr>
+    <tr><td><b>碱性凝胶型</b></td><td>氢氧化钠 + 次氯酸钠 + 表活</td><td>凝胶挂壁，U 型弯停留缓释；次氯酸钠氧化兼消毒</td><td class="stars">★★★★</td><td><span class="badge b-mid">中</span></td></tr>
+    <tr><td><b>生物酶型</b></td><td>蛋白酶/脂肪酶/纤维素酶</td><td>酶催化分解，温和无腐蚀，起效慢（数小时~过夜）</td><td class="stars">★★★</td><td><span class="badge b-mid">中</span></td></tr>
+  </table>
+  <div class="note"><b>可验证选购指标：</b>①成分表是否含氢氧化钠且排序靠前 <span class="badge b-hi">高</span>；②起效须静置 15-30 分钟（重度可过夜），宣称"倒入即通"=营销夸大 <span class="badge b-hi">高</span>；③剂型匹配：顽固油块选颗粒、U 型弯养护选凝胶 <span class="badge b-mid">中</span>；④含碱量 ≥25%、pH≤11 为某企标样本锚点，非行业门槛 <span class="badge b-lo">低·待验证</span></div>
+</section>
+
+<!-- 品牌格局 -->
+<section>
+  <h2>品牌格局与价格带 <span class="badge b-mid">格局：中</span> <span class="badge b-lo">价格：低·待验证</span></h2>
+  <table>
+    <tr><th>梯队</th><th>品牌</th><th>参考价（电商快照）</th><th>口碑要点</th></tr>
+    <tr><td>国际大牌</td><td>威猛先生（上海庄臣）</td><td>500g 约 7-18 元；960ml 啫喱 15-40 元</td><td>品类认知第一，京东单链接 400 万+评价，颗粒型代表</td></tr>
+    <tr><td>国际大牌</td><td>花王 KAO</td><td>500g 约 20-30 元</td><td>凝胶型代表，温和气味小，评测口碑好</td></tr>
+    <tr><td>进口/网红</td><td>Mootaa 膜太</td><td>575ml 约 43 元</td><td>单价偏高，核心成分同为 NaOH 体系，性价比一般</td></tr>
+    <tr><td>国产头部</td><td>老管家</td><td>啫喱 1kg 约 10-30 元</td><td>大容量便宜；强碱性，长期高频用注意管道老化（T3 单源）</td></tr>
+    <tr><td>国产大厂</td><td>威王(立白)/绿伞/家安/妙管家</td><td>4-15 元</td><td>同成分路线的平价替代</td></tr>
+    <tr><td style="color:var(--red)">避坑区</td><td>无品牌白牌</td><td>5-13 元</td><td>缺企标备案与品控背书，不推荐</td></tr>
+  </table>
+  <p style="font-size:13px;color:var(--sub)">依据：CNPP/Maigoo 2026 十大品牌榜（T3）+ 京东销量页（T3）两源一致；价格为 2026-09 电商快照，时效以天计，下单前以当日价为准。</p>
+</section>
+
+<!-- 安全红线 -->
+<section>
+  <h2>⚠️ 安全红线检查（硬门槛）</h2>
+  <div class="warn"><b>绝对禁止：</b>含次氯酸钠的疏通剂与酸性清洁剂（洁厕灵/盐酸/大量白醋）混用，立即产生剧毒氯气，可致肺水肿甚至死亡；同一管道先后使用也需清水冲洗并间隔 30 分钟以上。依据：深圳市卫健委、市疾控中心、多地医院急诊案例（多源 T1/T2）。<span class="badge b-hi">高</span></div>
+  <table>
+    <tr><th>情形</th><th>判定</th><th>置信度</th></tr>
+    <tr><td>铝管 / 蛇皮管 / 涂层管 / 塑料软管</td><td><b>不能用</b>强碱型（NaOH 腐蚀铝、放热损软管涂层），改酶制剂或物理</td><td><span class="badge b-hi">中-高</span></td></tr>
+    <tr><td>老房铸铁管</td><td><b>条件下能用</b>：核对包装"适用管道"标注（部分产品仅限 PVC/陶瓷）</td><td><span class="badge b-lo">低-中·待验证</span></td></tr>
+    <tr><td>人体接触</td><td><b>条件下能用</b>：戴橡胶手套、通风、防入眼；误服速就医（儿童误服灼伤案例：长沙 3 岁幼童）</td><td><span class="badge b-hi">高</span></td></tr>
+    <tr><td>厨房食品接触</td><td>使用后大量清水冲洗，残留强碱不得接触餐具</td><td><span class="badge b-hi">高</span></td></tr>
+  </table>
+  <div class="note"><b>标准核查：</b>截至 2026-09-20 未检索到本品类的强制性国标（GB）或轻工行标（QB/T），市场主流执行<b>企业标准备案（Q/xxx）</b>——无统一国标门槛，品质靠企业自我声明，故选购优先有企标备案的大厂、回避无标白牌。<span class="badge b-mid">中</span></div>
+</section>
+
+<!-- 智商税 -->
+<section>
+  <h2>智商税识别（概念 ≠ 功效）</h2>
+  <div class="kgrid">
+    <div class="kcard">📹 <b>"倒入即喷涌"广告 = 视频加速</b>。真实反应需 15-30 分钟甚至过夜（T2 科协）。<span class="badge b-hi">高</span></div>
+    <div class="kcard">🧪 <b>小苏打+白醋混合 = 无效</b>。中和产气无清洁力，"清洁效果实际为零"；分开单用各有用途（T2 科协）。<span class="badge b-mid">中</span></div>
+    <div class="kcard">🚫 <b>"溶解一切"夸大</b>。完全堵死时药剂到不了堵塞点；对非有机异物无效（T3+原理）。<span class="badge b-mid">中</span></div>
+    <div class="kcard">💰 <b>贵 ≠ 好</b>。43 元的 Mootaa 与 7-18 元的威猛先生同为 NaOH 体系，厨房场景平价大厂款已够用（T3）。<span class="badge b-mid">中</span></div>
+  </div>
+</section>
+
+<!-- 置信度汇总 -->
+<section>
+  <h2>置信度总评</h2>
+  <table>
+    <tr><th>关键结论</th><th>置信度</th><th>依据</th></tr>
+    <tr><td>厨房油脂半堵 → 强碱疏通剂对症</td><td><span class="badge b-hi">高</span></td><td>T2 科协 + T2 辽宁日报 + T1 专利配方，多源一致</td></tr>
+    <tr><td>混用酸性清洁剂产生氯气（致命）</td><td><span class="badge b-hi">高</span></td><td>卫健委/疾控中心/医院多源 T1/T2</td></tr>
+    <tr><td>疏通剂需静置起效，"即通"为夸大</td><td><span class="badge b-hi">高</span></td><td>两个独立 T2 源一致</td></tr>
+    <tr><td>完全堵死先物理后化学</td><td><span class="badge b-mid">中</span></td><td>≥2 个 T3 源一致 + 原理推断</td></tr>
+    <tr><td>品牌格局（威猛先生/花王/老管家为第一梯队）</td><td><span class="badge b-mid">中</span></td><td>≥2 个 T3 榜单/销量源一致</td></tr>
+    <tr><td>无强制国标、执行企业标准</td><td><span class="badge b-mid">中</span></td><td>多份企标文本 + 检索未获 GB/QB（"未检索到"≠"不存在"）</td></tr>
+    <tr><td>具体价格带、上门 200 元起</td><td><span class="badge b-lo">低·待验证</span></td><td>T3/T4 电商快照，时效性强</td></tr>
+  </table>
+  <p><b>整体置信度：<span class="badge b-mid">中</span></b>（木桶原则：方案与安全骨干为高，选购建议中的价格与单品表现为低，拉低整体档位）</p>
+</section>
+
+<!-- 知识缺口 -->
+<section>
+  <h2>知识缺口</h2>
+  <ul class="refs">
+    <li>各品牌实时到手价与促销节奏 —— 以京东/淘宝当日价为准</li>
+    <li>企标含碱量 ≥25% 是否行业普遍水平 —— 仅单一企标样本 [待验证]</li>
+    <li>是否有制定中的 QB/T 行标 —— 未能确认 [待验证]</li>
+    <li>上门疏通实际价格带 —— 仅单源 T3，城市差异大 [待验证]</li>
+    <li>老房铸铁管兼容性 —— 依赖各产品包装标注，无统一测试数据 [待验证]</li>
+  </ul>
+</section>
+
+<!-- 来源 -->
+<section>
+  <h2>参考来源（按证据分级）</h2>
+  <h3><span class="tag t1">T1</span>官方 / 标准 / 监管</h3>
+  <ul class="refs">
+    <li><a href="https://wjw.sz.gov.cn/gzcy/ywzs/ggws/content/post_12649410.html">深圳市卫健委：年末大扫除，这些清洁剂不能混着用</a></li>
+    <li><a href="http://jiading.gov.cn/xinwen/jddt1/shxw/content_929936">上海市嘉定区政府：清洁剂混用中毒案例</a></li>
+    <li><a href="https://patentimages.storage.googleapis.com/04/26/5e/43841e590c4c04/CN1144265A.pdf">专利 CN1144265A：管道疏通剂配方（碱金属氢氧化物 5-80% 等）</a></li>
+    <li>企业标准文本：<a href="https://www.bzfxw.com/QB/1054133.html">Q/ZRF 009-2024</a>、<a href="https://static1.tianyancha.com/czd_file/fs/308764fe-ac31-4fe1-b4bc-fd476cf99e4d.pdf">Q/JSRH 12</a>、<a href="https://qxb-img-osscache.qixin.com/standards/76f372a06f7329cb568d732497c2d7c7.pdf">Q/28BY21-2021</a></li>
+  </ul>
+  <h3><span class="tag t2">T2</span>专业机构 / 权威实测</h3>
+  <ul class="refs">
+    <li><a href="https://kexie.thnet.gov.cn/kexie/kpzs/202112/162423ad0cbf43df825edb1551663051.shtml">科协科普：管道疏通剂原理、广告视频加速揭秘、小苏打+白醋辟谣</a></li>
+    <li><a href="https://epaper.lnd.com.cn/lnbepaper/pc/con/202310/17/content_209200.html">辽宁日报：倒完管道疏通剂等半小时</a></li>
+    <li><a href="https://health.rednet.cn/content/646655/69/12087564.html">红网/长沙市中心医院：幼童误服疏通剂灼伤案例</a></li>
+    <li><a href="https://www.guanhai.com.cn/p/457117.html">市疾控中心：消毒液和洁厕灵混放混用，当心氯气中毒</a></li>
+  </ul>
+  <h3><span class="tag t3">T3</span>评测 / 口碑</h3>
+  <ul class="refs">
+    <li><a href="https://m.maigoo.com/shida/list_8104.html">Maigoo/CNPP 2026 管道疏通剂十大品牌榜</a></li>
+    <li><a href="https://post.smzdm.com/p/ad735w9d">什么值得买：厨卫下水道疏通指南（化学药剂与物理方案）</a></li>
+    <li><a href="https://www.zhihu.com/question/301149897/answer/2059736445">知乎：厨房下水很慢但管道是通的（物理/化学选择讨论）</a></li>
+    <li><a href="https://www.youtube.com/watch?v=ncQwevlAoRc">YouTube 实测：小林制药/魔术灵/威猛先生成分对比</a></li>
+    <li><a href="https://www.jd.com/hprm/15901085dfe3c265d6878.html">京东：排水管清洁剂销量与评价聚合页</a></li>
+  </ul>
+  <h3><span class="tag t4">T4</span>商家宣称（仅作线索）</h3>
+  <ul class="refs">
+    <li><a href="https://www.smzdm.com/p/182380390/">什么值得买：威猛先生 500g 促销价 17.89 元</a>；<a href="https://www.taobao.com/chanpin/021512adc3471cf358ba24bf2e72c3dcf2aa4f1178847c53871f38a1838e5f63.html">淘宝厨房疏通剂频道页</a>；<a href="https://s.1688.com/kq/-CDFEC3CDCFC8C9FAB9DCB5C0CDA8.html">1688 威猛先生批发价</a>；<a href="https://www.cnblogs.com/newjpz/p/20059271">博客园 2026 厨卫疏通液榜单</a>（软文特征明显）</li>
+  </ul>
+</section>
+
+<footer>
+  框架作者：伏羲 ｜ 格物志 v1.0 ｜ 本报告为公开信息综合，未做实测；关键价格与单品数据以购买当日为准<br>
+  归档：研究报告/家居清洁与耗材/厨房下水道疏通-2026-09-20-1506.md
+</footer>
+
+</div>
+</body>
+</html>
