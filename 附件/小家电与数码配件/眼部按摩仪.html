@@ -24,14 +24,18 @@
   li { margin-bottom: 6px; font-size: 14px; }
   .danger { border-left: 6px solid #e53e3e; }
   .danger h2 { color: #e53e3e; }
-  .coldhot { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  .coldhot .box { border-radius: 10px; padding: 14px 16px; font-size: 14px; }
-  .box.cold { background: #ebf5ff; border-top: 4px solid #3182ce; }
+  .trio { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .trio .box { border-radius: 10px; padding: 12px 14px; font-size: 13.5px; }
   .box.hot { background: #fff5f0; border-top: 4px solid #dd6b20; }
-  .box h3 { font-size: 15px; margin-bottom: 6px; }
-  .box.cold h3 { color: #3182ce; } .box.hot h3 { color: #dd6b20; }
+  .box.cold { background: #ebf5ff; border-top: 4px solid #3182ce; }
+  .box.mist { background: #f0f9f4; border-top: 4px solid #38a169; }
+  .box h3 { font-size: 14.5px; margin-bottom: 6px; }
+  .box.hot h3 { color: #dd6b20; } .box.cold h3 { color: #3182ce; } .box.mist h3 { color: #38a169; }
   .price { color: #c05621; font-weight: 600; }
-  @media (max-width: 640px) { .coldhot { grid-template-columns: 1fr; } }
+  .conf { display: inline-block; font-size: 12px; padding: 1px 8px; border-radius: 10px; }
+  .conf-high { background: #c6f6d5; color: #276749; }
+  .conf-mid { background: #fefcbf; color: #975a16; }
+  @media (max-width: 720px) { .trio { grid-template-columns: 1fr; } }
   footer { text-align: center; font-size: 12px; color: #a0aec0; padding: 16px 0 8px; }
 </style>
 </head>
@@ -40,89 +44,91 @@
 
 <header>
   <h1>眼部按摩仪 · 品类主文档</h1>
-  <div class="meta">格物志 ｜ 小家电与数码配件 ｜ 更新 2026-09-21（冷热敷专题+冰敷唯一性验证）｜ v1.3</div>
+  <div class="meta">格物志 ｜ 小家电与数码配件 ｜ 更新 2026-09-21（雾化核查+热敷横向）｜ v1.3</div>
 </header>
 
 <div class="tldr">
   <h2>最新结论速览</h2>
   <ul>
-    <li><strong>只考虑物理按摩</strong>：气囊式（轻柔主流）/ 触点式（精准强烈）；<strong>脉冲款不要碰</strong></li>
-    <li><strong>性价比首选</strong>：小米米家智能眼部按摩仪，<span class="price">行情 300-450 元</span>（消保委实测三项优异）</li>
-    <li><strong>冷热双敷</strong>：倍轻松 SeeKpro，<span class="price">券后 770-1260 元</span>（官方 1399）——<strong>眼罩式大牌成熟冰敷款已验证基本只有这一个型号</strong></li>
-    <li><strong>触点式</strong>：SKG E4 ｜ <strong>午睡向</strong>：飞利浦午睡宝 ｜ <strong>妙界 Y9</strong>：券后 ~500 可买别看标价</li>
-    <li><strong>冷敷 ≠ 热敷都消肿</strong>：热敷主攻睑板腺/循环，冷敷主攻消肿止痒镇静——买冰敷前先想自己有没有高频浮肿/过敏场景</li>
+    <li><strong>只考虑物理按摩</strong>：气囊式（轻柔主流）/ 触点式（精准强烈）；脉冲款不要碰；雾化是干涩向差异化路线</li>
+    <li><strong>综合首选</strong>：小米米家——消保委「视疲劳改善率第一 63.4%」（新华网报道），<span class="price">300-450 元</span></li>
+    <li><strong>热敷硬件最强</strong>：倍轻松 See X2 Pro（40-49℃ + 环形热敷面积+30%），好价 699 元</li>
+    <li><strong>干涩向</strong>：妙界 Y7 Pro（雾化+42℃热敷一体，水箱 UV 杀菌），<span class="price">券后 368-500 元</span></li>
+    <li><strong>冷热双敷</strong>：倍轻松 SeeKpro，<span class="price">券后 770-1260 元</span>——眼罩式大牌成熟冰敷款只此一个（已验证）</li>
+    <li><strong>妙界注意</strong>：雾化是 <strong>Y7 Pro</strong>，不是 Y9；Y9 券后 ~500 看券后价买</li>
   </ul>
 </div>
 
 <section class="danger">
   <h2>安全红线（先读再买）</h2>
   <ul>
-    <li><strong>禁用人群</strong>：青光眼/眼压高、高度近视（&gt;600 度）、白内障或眼部手术史、眼外伤史、急性眼病发作期——挤压瞬间眼压可飙升 20-30mmHg</li>
+    <li><strong>禁用人群</strong>：青光眼/眼压高、高度近视（&gt;600 度）、眼部手术史、眼外伤、急性眼病发作期——挤压瞬间眼压可飙升 20-30mmHg</li>
     <li><strong>智商税红线</strong>：宣称「治疗近视/白内障/青光眼」的一律排除</li>
-    <li>炎症期不热敷；糖尿病等循环障碍者冷敷前先问医生；儿童慎用</li>
+    <li>炎症期不热敷；雾化只用纯净水+勤洗水箱；儿童慎用</li>
   </ul>
 </section>
 
 <section>
-  <h2>冷敷 vs 热敷（分工明确，不是都消肿）</h2>
-  <div class="coldhot">
+  <h2>热敷 / 冷敷 / 雾化（三者分工，不是一回事）</h2>
+  <div class="trio">
     <div class="box hot">
       <h3>热敷 40-42℃ ｜ 疏通+循环</h3>
       <ul>
-        <li>融化睑脂、疏通睑板腺（蒸发型干眼一线物理疗法，占干眼 70%+）</li>
-        <li>促血液循环、放松肌肉、缓解疲劳</li>
-        <li>适合：干眼（缺油型）、视疲劳、睡前</li>
+        <li>融化睑脂、疏通睑板腺（占干眼 70%+）</li>
+        <li>促循环、放松、缓疲劳</li>
+        <li>适合：干涩（缺油型）、视疲劳</li>
       </ul>
     </div>
     <div class="box cold">
       <h3>冷敷 4-10℃ ｜ 消肿+镇静</h3>
       <ul>
-        <li>收缩血管 → 消肿、减充血</li>
-        <li>抑制冷受体 → 止痒（过敏）、镇静急性炎症</li>
-        <li>适合：晨起浮肿、熬夜肿、过敏发痒、急性期</li>
+        <li>收缩血管消肿减充血</li>
+        <li>止痒（过敏）、镇静急性炎症</li>
+        <li>适合：晨起浮肿、熬夜肿、过敏痒</li>
+      </ul>
+    </div>
+    <div class="box mist">
+      <h3>雾化 ｜ 即时湿润（补水）</h3>
+      <ul>
+        <li>微米水雾直接湿润眼表，干涩即时缓解</li>
+        <li>补水不补油（睑板腺问题靠热敷）</li>
+        <li>水箱必须纯净水+勤洗；不能替代人工泪液</li>
       </ul>
     </div>
   </div>
-  <p style="margin-top:10px;font-size:14px"><strong>买冰敷值不值</strong>：高频浮肿/过敏痒 → 值；偶发 → 米家热敷款 + 冷藏凝胶眼罩（几十元）是更划算的等效组合。双敷设备买到的是恒温精准+便利+按摩一体。注意：SeeKpro 热敷档实测约 36.5-38℃，比公认舒适的 42℃ 偏温——热敷为主诉求的人留意这个 trade-off。</p>
-</section>
-
-<section>
-  <h2>「可靠冰敷只有 SeeKpro 吗」验证结果</h2>
-  <ul>
-    <li><strong>眼罩式 + 大牌 + 成熟在售：是，基本只有倍轻松 SeeKpro</strong>（倍轻松官网在售，T1）<span class="conf conf-high">高</span></li>
-    <li>边界外三类（可靠度递减）：①棒状手持美眼仪（西屋/迪斯等贴牌，水深）②新品牌全功能款（如 lehoo 五效合一，2026 新品 [待验证]）③冷藏凝胶眼罩（纯冷敷平替，无按摩）</li>
-    <li>结论：要「按摩+可靠冰敷一体」= SeeKpro 独一份；接受两件套 = 热敷按摩仪 + 冷藏眼罩，更便宜</li>
-  </ul>
 </section>
 
 <section>
   <h2>重点型号价格快照（2026-09-21 采集，[待验证]）</h2>
   <table>
-    <tr><th>型号</th><th>官方/标价</th><th>行情/券后</th><th>备注</th></tr>
-    <tr><td><strong>小米米家智能眼部按摩仪</strong></td><td>449-499 元</td><td class="price">251-450 元</td><td>消保委三项优异，性价比首选</td></tr>
-    <tr><td><strong>倍轻松 SeeKpro（冷热双敷）</strong></td><td>1399 元（官网）</td><td class="price">773-1260 元</td><td>大牌唯一成熟冷热敷款</td></tr>
-    <tr><td>倍轻松 See X2 Pro</td><td>—</td><td class="price">699 元（2022 好价）</td><td>悬浮气囊+环形热敷</td></tr>
-    <tr><td>妙界 Y9</td><td>948-1999 元（虚高）</td><td class="price">508-538 元</td><td>气囊+点振+热敷，看券后价</td></tr>
+    <tr><th>型号</th><th>官方/标价</th><th>行情/券后</th><th>定位</th></tr>
+    <tr><td><strong>小米米家智能眼部按摩仪</strong></td><td>449-499 元</td><td class="price">251-450 元</td><td>综合首选（消保委视疲劳改善率第一）</td></tr>
+    <tr><td>倍轻松 See X2 Pro</td><td>—</td><td class="price">699 元（2022 好价）</td><td>热敷硬件最强（40-49℃/面积+30%）</td></tr>
+    <tr><td><strong>妙界 Y7 Pro</strong></td><td>525-704 元</td><td class="price">368-500 元</td><td>干涩向（雾化+热敷+点振）</td></tr>
+    <tr><td>倍轻松 SeeKpro</td><td>1399 元（官网）</td><td class="price">773-1260 元</td><td>冷热双敷唯一大牌成熟款</td></tr>
+    <tr><td>妙界 Y9</td><td>948-1999 元（虚高）</td><td class="price">508-538 元</td><td>气囊+点振（无雾化）</td></tr>
     <tr><td>SKG E4</td><td>—</td><td class="price">约 300-500 元档 [待验证]</td><td>触点式可视化</td></tr>
   </table>
 </section>
 
 <section>
-  <h2>技术路线对比</h2>
+  <h2>怎么选（按需求）</h2>
   <table>
-    <tr><th>路线</th><th>优点</th><th>缺点</th><th>适合谁</th></tr>
-    <tr><td><strong>气囊式</strong></td><td>轻柔、包裹感、热敷面积大、静音</td><td>力度偏弱</td><td>大多数人，默认首选</td></tr>
-    <tr><td>触点式</td><td>精准、力度强、可可视化</td><td>可能酸胀</td><td>耐受高/水肿人群</td></tr>
-    <tr><td>冷热双敷</td><td>冷敷消肿止痒、热敷通睑板腺</td><td>贵；热敷档偏温</td><td>浮肿/过敏高频人群</td></tr>
-    <tr><td>脉冲 EMS</td><td>—</td><td>离脑近风险不可控</td><td><strong>不建议任何人</strong></td></tr>
+    <tr><th>需求</th><th>推荐</th></tr>
+    <tr><td>综合/性价比</td><td>小米米家（300-450 元）</td></tr>
+    <tr><td>热敷性能发烧</td><td>倍轻松 See X2 Pro（温度上限与面积最强）</td></tr>
+    <tr><td>眼干涩为主</td><td>妙界 Y7 Pro（雾化一体）/ 纯润眼仪；干眼症先就医</td></tr>
+    <tr><td>浮肿/消肿高频</td><td>倍轻松 SeeKpro（冷热双敷）</td></tr>
+    <tr><td>可视化/办公</td><td>SKG E4 类触点式</td></tr>
+    <tr><td>午睡遮光静音</td><td>飞利浦午睡宝</td></tr>
   </table>
 </section>
 
 <section>
   <h2>置信度与知识缺口</h2>
   <ul>
-    <li>整体置信度：<strong>中</strong>（路线/红线/冰敷唯一性=高；型号推荐=中；价格快照全标 [待验证]）</li>
-    <li>缺口：实时价格 → 官方店核对；高度近视/眼压问题 → <strong>先问眼科医生</strong></li>
+    <li>整体置信度：<strong>中</strong>（路线/红线/冰敷唯一性=高；米家实测锚点偏强；价格快照全标 [待验证]）</li>
+    <li>缺口：实时价格 → 官方店核对；Y7 Pro 雾化粒径细节 → 客服核对；高度近视/眼压问题 → <strong>先问眼科医生</strong></li>
   </ul>
 </section>
 
